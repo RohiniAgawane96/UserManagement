@@ -1,0 +1,51 @@
+<div class="" style="margin: 0 ;position: absolute;top: 20%;left: 35%;">
+<mat-card>
+    <mat-card-content>
+        <h1>Add User</h1>
+        <form action="" [formGroup]="userForm" (ngSubmit)="addUser()">
+            <mat-form-field class="example-full-width">
+             <mat-label>Full Name</mat-label>
+                <input formControlName="name" minlength="10" matInput placeholder="Enter Your Name" value="" name="name"> 
+            </mat-form-field>            
+            <small
+            *ngIf="userForm.controls.name.invalid && (userForm.controls.name.dirty || userForm.controls.name.touched)"
+            class="block p-error" >
+            <div *ngIf="userForm.controls.name.errors?.['required']">Name is required.</div>
+            <div *ngIf="userForm.controls.name.errors?.['min']">Enter minimum </div>
+            </small>
+
+            <br>
+            <mat-form-field class="example-full-width">
+                <mat-label>Email</mat-label>
+                <input formControlName="email" matInput placeholder="abc@gmail.com" value="">                
+            </mat-form-field>
+            <small  *ngIf="userForm.controls.email.invalid && (userForm.controls.email.dirty || userForm.controls.email.touched)"
+            class="block p-error">
+            <div *ngIf="userForm.controls.email.errors?.['required']">Email is required.</div>
+            <div *ngIf="userForm.controls.email.errors?.['email']">Email should be valid</div>
+            <div *ngIf="userForm.controls.email.errors?.['pattern']">Please enter a valid email address</div>            
+            </small>
+
+            <br>
+
+            <mat-form-field>
+                <mat-label>Enter Your Role</mat-label>
+                <mat-select formControlName="role">                  
+                  <mat-option value="User">User</mat-option>
+                  <mat-option value="Admin">Admin</mat-option>
+                </mat-select>
+            </mat-form-field>
+
+          <div class="add_button">
+            <div class="example-button-row">                
+                <button [disabled]="userForm.invalid" mat-raised-button color="primary">Add</button>
+            </div>
+
+            <div class="example-button-row"> 
+                <button (click)="cancel()" mat-button color="warn">Cancel</button>               
+            </div>
+          </div>
+        </form>
+    </mat-card-content>
+</mat-card>
+</div>

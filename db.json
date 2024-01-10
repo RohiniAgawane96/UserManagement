@@ -1,0 +1,154 @@
+{
+  "user": [
+    {
+      "id": "dgcdscgd",
+      "name": "NT Infotech",
+      "email": "test@gmail.com",
+      "role": "admin"
+    },
+    {
+      "name": "Britney Spears",
+      "email": "brit87@gmail.com",
+      "role": "User",
+      "id": "SBkBVs-"
+    },
+    {
+      "name": "Rohini Agawane",
+      "email": "john.doe@example.com",
+      "role": "User",
+      "id": "6dk1KNC"
+    },
+    {
+      "name": "Samidha",
+      "email": "jane_smith123@gmail.co.uk",
+      "role": "User",
+      "id": "-XN3Ovd"
+    },
+    {
+      "name": "Ina Malkoy",
+      "email": "Ina@co.in",
+      "role": "User",
+      "id": "hPcvctL"
+    },
+    {
+      "name": "Ezakiel Anderson",
+      "email": "anderson22@co.in",
+      "role": "User",
+      "id": "orodZxb"
+    },
+    {
+      "name": "Shiela Bese",
+      "email": "shiela23@.yahoo.in",
+      "role": "User",
+      "id": "PEdtqaD"
+    },
+    {
+      "id": "3",
+      "name": "John Smith",
+      "email": "john.smith@example.com",
+      "role": "Admin"
+    },
+    {
+      "id": "4",
+      "name": "Alice Johnson",
+      "email": "alice.johnson@gmail.com",
+      "role": "User"
+    },
+    {
+      "id": "5",
+      "name": "Bob Williams",
+      "email": "bob.williams@yahoo.com",
+      "role": "Admin"
+    },
+    {
+      "id": "6",
+      "name": "Catherine Davis",
+      "email": "catherine.davis@hotmail.com",
+      "role": "User"
+    },
+    {
+      "id": "7",
+      "name": "David White",
+      "email": "david.white@gmail.com",
+      "role": "User"
+    },
+    {
+      "id": "8",
+      "name": "Emily Brown",
+      "email": "emily.brown@example.com",
+      "role": "Admin"
+    },
+    {
+      "id": "9",
+      "name": "Frank Robinson",
+      "email": "frank.robinson@yahoo.com",
+      "role": "User"
+    },
+    {
+      "id": "10",
+      "name": "Grace Miller",
+      "email": "grace.miller@hotmail.com",
+      "role": "Admin"
+    },
+    {
+      "id": "11",
+      "name": "Henry Lee",
+      "email": "henry.lee@gmail.com",
+      "role": "User"
+    },
+    {
+      "id": "12",
+      "name": "Isabel Clark",
+      "email": "isabel.clark@yahoo.com",
+      "role": "Admin"
+    },
+    {
+      "id": "13",
+      "name": "Jack Turner",
+      "email": "jack.turner@example.com",
+      "role": "User"
+    },
+    {
+      "id": "14",
+      "name": "Karen Harris",
+      "email": "karen.harris@gmail.com",
+      "role": "User"
+    },
+    {
+      "id": "15",
+      "name": "Liam Martin",
+      "email": "liam.martin@yahoo.com",
+      "role": "Admin"
+    },
+    {
+      "id": "16",
+      "name": "Mia Davis",
+      "email": "mia.davis@hotmail.com",
+      "role": "User"
+    },
+    {
+      "id": "17",
+      "name": "Nathan Clark",
+      "email": "nathan.clark@gmail.com",
+      "role": "Admin"
+    },
+    {
+      "id": "18",
+      "name": "Olivia Wilson",
+      "email": "olivia.wilson@yahoo.com",
+      "role": "User"
+    },
+    {
+      "id": "19",
+      "name": "Patrick Smith",
+      "email": "patrick.smith@example.com",
+      "role": "Admin"
+    },
+    {
+      "id": "20",
+      "name": "Quincy Turner",
+      "email": "quincy.turner@gmail.com",
+      "role": "User"
+    }
+  ]
+}
