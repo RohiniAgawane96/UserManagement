@@ -1,7 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { UserService } from '../user.service';
 import { Router } from '@angular/router';
+import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
+import { ActivatedRoute } from '@angular/router';
+
 
 @Component({
   selector: 'app-add-user',
@@ -12,10 +15,14 @@ export class AddUserComponent implements OnInit {
 
   constructor(private fb:FormBuilder, 
     private userservice:UserService,
-    private router:Router
+    private router:Router,
+    private _dialogRef: MatDialogRef<AddUserComponent>,
+    @Inject(MAT_DIALOG_DATA) public data: any,
+    private route: ActivatedRoute
     ) { }
 
   ngOnInit(): void {
+    // this.userForm.patchValue(this.data);
   }
 
 userForm = this.fb.group({
@@ -24,19 +31,18 @@ userForm = this.fb.group({
   role:["",Validators.required]
 })
 
-addUser(){
-this.userservice.addUser(this.userForm.value).subscribe(
-  response => {
-    console.log(response);
-    this.userForm.reset();
+addUser(){  
+      this.userservice.addUser(this.userForm.value).subscribe({
+        next: (val: any) => {
+          // this._coreService.openSnackBar('Employee added successfully');
+          // this._dialogRef.close(true);
+        },
+        error: (err: any) => {
+          console.error(err);
+        },
+      });
+    }
   }
-);
-this.router.navigate(['/user']);
-}
 
-cancel(){
-this.userForm.reset();
-this.router.navigate(['/user']);
-}
 
-}
+

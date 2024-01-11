@@ -8,7 +8,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AddUserComponent } from './add-user/add-user.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { UserComponent } from './user/user.component';
 import {MatPaginator, MatPaginatorModule} from '@angular/material/paginator';
 import {MatTableDataSource, MatTableModule} from '@angular/material/table';
 import {MatInputModule} from '@angular/material/input';
@@ -19,12 +18,14 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatIconModule} from '@angular/material/icon';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatButtonModule} from '@angular/material/button';
-
+import { TableModule } from 'primeng/table';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatSort, MatSortModule} from '@angular/material/sort';
 @NgModule({
   declarations: [
     AppComponent,
-    UserComponent,
-    AddUserComponent
+    AddUserComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,7 +42,11 @@ import {MatButtonModule} from '@angular/material/button';
     MatSelectModule,
     MatIconModule,
     MatDividerModule,
-    MatButtonModule
+    MatButtonModule,
+    TableModule,
+    MatToolbarModule,
+    MatDialogModule,
+    MatSortModule
   ],
   providers: [UserService],
   bootstrap: [AppComponent]

@@ -1,11 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { UserComponent } from './user/user.component';
 import { AddUserComponent } from './add-user/add-user.component';
+import { TableModule } from 'primeng/table';
 
 const routes: Routes = [
-  {path:'user', component:UserComponent},
-  {path:'add',component:AddUserComponent}
+  {path:'add',component:AddUserComponent},
 ];
 
 @NgModule({
