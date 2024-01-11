@@ -18,7 +18,6 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatIconModule} from '@angular/material/icon';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatButtonModule} from '@angular/material/button';
-import { TableModule } from 'primeng/table';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatSort, MatSortModule} from '@angular/material/sort';
@@ -43,7 +42,6 @@ import {MatSort, MatSortModule} from '@angular/material/sort';
     MatIconModule,
     MatDividerModule,
     MatButtonModule,
-    TableModule,
     MatToolbarModule,
     MatDialogModule,
     MatSortModule
